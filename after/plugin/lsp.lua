@@ -1,10 +1,7 @@
 local lsp = require("lsp-zero")
-
 lsp.preset("recommended")
 
 lsp.ensure_installed({
-	'tsserver',
-	'rust_analyzer',
 })
 
 -- Fix Undefined global 'vim'
@@ -14,15 +11,12 @@ lsp.nvim_workspace()
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
 local cmp_mappings = lsp.defaults.cmp_mappings({
-    ["<C-u>"] = cmp.mapping.select_prev_item(cmp_select),
-    ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-    ['<C-y>'] = cmp.mapping.confirm({ select = true }),
+    ["<S-Tap>"] = cmp.mapping.select_prev_item(cmp_select),
+    ["<Tab>"] = cmp.mapping.select_next_item(cmp_select),
+    ["<enter>"] = cmp.mapping.confirm({ select = true }),
 })
 
-
-
-cmp_mappings['<Tab>'] = nil
-cmp_mappings['<S-Tab>'] = nil
+cmp_mappings['<space>'] = nil
 
 lsp.setup_nvim_cmp({
 	mapping = cmp_mappings
@@ -52,6 +46,7 @@ lsp.on_attach(function(client, bufnr)
 	vim.keymap.set("n", "<leader>rn", function() vim.lsp.buf.rename() end, opts)
 	vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
+
 
 lsp.setup()
 
