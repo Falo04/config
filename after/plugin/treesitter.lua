@@ -1,5 +1,28 @@
-require'nvim-treesitter.configs'.setup {
-	ensure_installed = { "c", "c_sharp", "cpp", "json", "python", "javascript", "lua", "vim", "vimdoc", "http", "json" },
+require("nvim-treesitter.configs").setup({
+	ensure_installed = {
+		"bash",
+		"c",
+		"diff",
+		"html",
+		"javascript",
+		"jsdoc",
+		"json",
+		"jsonc",
+		"lua",
+		"luadoc",
+		"luap",
+		"markdown",
+		"markdown_inline",
+		"python",
+		"query",
+		"regex",
+		"toml",
+		"tsx",
+		"typescript",
+		"vim",
+		"vimdoc",
+		"yaml",
+	},
 
 	-- Install parsers synchronously (only applied to `ensure_installed`)
 	sync_install = false,
@@ -7,7 +30,6 @@ require'nvim-treesitter.configs'.setup {
 	-- Automatically install missing parsers when entering buffer
 	-- Recommendation: set to false if you don't have `tree-sitter` CLI installed locally
 	auto_install = true,
-
 
 	highlight = {
 		enable = true,
@@ -18,4 +40,7 @@ require'nvim-treesitter.configs'.setup {
 		-- Instead of true it can also be a list of languages
 		additional_vim_regex_highlighting = false,
 	},
-}
+	autotag = {
+		enable = true,
+	},
+})
