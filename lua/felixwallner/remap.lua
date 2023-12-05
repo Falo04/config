@@ -15,7 +15,7 @@ vim.keymap.set("n", "<leader>vs", ":vs<enter>")
 vim.keymap.set("n", "<leader>vf", ":vs ")
 
 -- change tabs of windows
-vim.keymap.set("n", "<leader><tab>", "<C-w><C-w>")
+vim.keymap.set("n", "<leader>w", "<C-w><C-w>")
 
 -- add new line without going into insert mode
 vim.keymap.set("n", "<leader>o", "o<Esc>")
