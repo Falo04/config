@@ -14,4 +14,5 @@ vim.g.copilot_filetypes = {
 	["go"] = true,
 	["python"] = true,
 	["markdwon"] = false,
+	["php"] = true,
 }

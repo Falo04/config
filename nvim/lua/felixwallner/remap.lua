@@ -51,4 +51,4 @@ vim.keymap.set("n", "<leader><leader>", function()
 	vim.cmd("so")
 end)
 
-vim.opt.mouse = ""
+-- vim.opt.mouse = ""
