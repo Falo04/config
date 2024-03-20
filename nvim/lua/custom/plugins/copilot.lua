@@ -21,6 +21,7 @@ return {
 			csharp = true,
 			typescript = true,
 			python = true,
+			go = true,
 			["."] = false,
 		},
 	},
