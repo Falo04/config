@@ -29,5 +29,6 @@ vim.opt.inccommand = "split"
 
 vim.opt.cursorline = true
 vim.opt.scrolloff = 10
+vim.opt.colorcolumn = "80"
 
 vim.opt.encoding = "utf-8"
