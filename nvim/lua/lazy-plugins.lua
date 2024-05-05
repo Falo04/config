@@ -8,7 +8,7 @@ require("lazy").setup({
 	require("custom/plugins/lspconfig"),
 	require("custom/plugins/conform"),
 	require("custom/plugins/cmp"),
-	require("custom/plugins/tokyonight"),
+	require("custom/plugins/colorscheme"),
 	--require("custom/plugins/todo-comments"),
 	require("custom/plugins/mini"),
 	require("custom/plugins/treesitter"),
