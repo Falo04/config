@@ -15,7 +15,7 @@ require("lazy").setup({
 	--require("custom/plugins/copilot"),
 	require("custom/plugins/harpoon"),
 	require("custom/plugins/comments"),
-	require("custom/plugins/vimtex"),
+	--require("custom/plugins/vimtex"),
 	require("custom/plugins/fugitive"),
 })
 
