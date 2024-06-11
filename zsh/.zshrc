@@ -58,3 +58,6 @@ alias ls='eza --color=always --git --no-permissions'
 alias n='nvim'
 alias c='clear'
 alias cd=z
+alias ..="z .."
+
+alias rectangle="~/.config/bash/rectangle.sh"

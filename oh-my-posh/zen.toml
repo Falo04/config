@@ -53,7 +53,7 @@ version = 2
         type="project"
         style="plain"
         foreground="#14A5Ae"
-        template = " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Version }}\uf487 {{.Version}}{{ end }} {{ if .Name }}{{ .Name }}{{ end }}{{ end }} | "
+        template = " {{ if .Error }}{{ .Error }} {{ else }}{{ if .Version }}\uf487 {{.Version }}{{ end }} {{ if .Name }}{{ .Name }}{{ end }} {{ end }}  "
 
         [blocks.segments.properties]
             always_enabled = true
