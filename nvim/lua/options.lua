@@ -32,3 +32,6 @@ vim.opt.scrolloff = 10
 vim.opt.colorcolumn = "80"
 
 vim.opt.encoding = "utf-8"
+
+vim.o.signcolumn = "yes:1"
+vim.o.numberwidth = 2

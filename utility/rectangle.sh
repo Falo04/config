@@ -20,7 +20,7 @@ fi
 
 if [[ "$1" == "-d" ]]; then
     case "$2" in
-        "mac") NUMBER=0;;
+        "mac") NUMBER=10;;
         "win") NUMBER=40;;
         *) echo "Error: the default value is not supported"; exit 1;;
     esac
@@ -28,11 +28,11 @@ fi
 
 echo "Following command will executed:"
 echo "defaults write com.knollsoft.Rectangle screenEdgeGapTop -int $NUMBER"
-defaults write com.knollsoft.Rectangle screenEdgeGapTop -int "$NUMBER"
 
 APP_NAME="Rectangle"
 
 osascript -e "tell application \"$APP_NAME\" to quit"
+defaults write com.knollsoft.Rectangle screenEdgeGapTop -int "$NUMBER"
 echo "Sleep for 1 sec"
 sleep 1
 open -a "$APP_NAME"

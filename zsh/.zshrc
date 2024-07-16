@@ -59,5 +59,9 @@ alias n='nvim'
 alias c='clear'
 alias cd=z
 alias ..="z .."
+alias cat=bat
 
-alias rectangle="~/.config/bash/rectangle.sh"
+
+eval "$(fzf --zsh)"
+eval "$(zoxide init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
