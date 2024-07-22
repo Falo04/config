@@ -17,6 +17,7 @@ require("lazy").setup({
 	require("custom/plugins/comments"),
 	--require("custom/plugins/vimtex"),
 	require("custom/plugins/fugitive"),
+	require("custom.plugins.autopairs"),
 })
 
 -- vim: ts=2 sts=2 sw=2 et
