@@ -25,7 +25,8 @@ version = 3
     [blocks.segments.properties]
       cache_duration = 'none'
       folder_separator_icon = '/'
-      style = 'full'
+      style = 'agnoster_short'
+      max_depth = 2
 
   [[blocks.segments]]
     template = '{{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}'

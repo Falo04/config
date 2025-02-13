@@ -68,6 +68,8 @@ eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
+# Load Angular CLI autocompletion.
+source <(ng completion script)
 
 # The following lines were added by compinstall
 
