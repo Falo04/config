@@ -80,3 +80,5 @@ zstyle :compinstall filename '/Users/felixwallner/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+export GPG_TTY=$(tty)
