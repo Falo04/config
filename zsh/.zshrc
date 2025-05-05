@@ -62,6 +62,8 @@ alias c='clear'
 alias cd=z
 alias ..="z .."
 alias cat=bat
+alias lg='lazygit'
+alias ld='lazydocker'
 
 
 eval "$(fzf --zsh)"
