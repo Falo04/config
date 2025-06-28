@@ -28,6 +28,7 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
+zinit load atuinsh/atuin
 
 
 # Keybindings
@@ -64,6 +65,7 @@ alias ..="z .."
 alias cat=bat
 alias lg='lazygit'
 alias ld='lazydocker'
+alias asr='atuin scripts run'
 
 
 eval "$(fzf --zsh)"
@@ -84,3 +86,8 @@ compinit
 # End of lines added by compinstall
 
 export GPG_TTY=$(tty)
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/felixwallner/.lmstudio/bin"
+# End of LM Studio CLI section
+
