@@ -1,4 +1,4 @@
-function nz
+function nf
     set -l dir $argv[1]
     if test -z "$dir"
     else
