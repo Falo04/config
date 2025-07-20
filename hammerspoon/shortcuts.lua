@@ -26,6 +26,7 @@ hs.hotkey.bind({}, "F1", function()
 end)
 
 -- shortcuts for jumping to specific applications
+-- important applications
 hs.hotkey.bind({}, "F2", function()
 	hs.application.launchOrFocus("Zen")
 end)
@@ -36,6 +37,20 @@ end)
 
 hs.hotkey.bind({}, "F4", function()
 	hs.application.launchOrFocus("Obsidian")
+end)
+
+-- more applications
+hs.hotkey.bind({ "cmd" }, "F1", function()
+	hs.application.launchOrFocus("Singal")
+end)
+hs.hotkey.bind({ "cmd" }, "F2", function()
+	hs.application.launchOrFocus("WebStorm")
+end)
+hs.hotkey.bind({ "cmd" }, "F3", function()
+	hs.application.launchOrFocus("RustRover")
+end)
+hs.hotkey.bind({ "cmd" }, "F4", function()
+	hs.application.launchOrFocus("Visual Studio Code")
 end)
 
 -- simulate media keys
