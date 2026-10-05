@@ -1,1 +1,2 @@
 require("shortcuts")
+require("brightness")
